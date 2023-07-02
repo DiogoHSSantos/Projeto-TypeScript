@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "dist/js", //caminho de onde vão ser criados os arquivos de Ts para Js.
+        "target": "ES6", // Versão do EcmaScript que vamos utilizar.
+    },
+    "include": ["app/**/*"] //pasta de arquivos TypeScript.
+}

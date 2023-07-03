@@ -1,5 +1,9 @@
-import { Negociacao } from "./models/negociacao.js";
+import { NegociacaoControler } from "./controllers/negociacao-controller.js";//lembre-se sempre de colocar o .js no final para a IDE saber que é um módulo de um arquivo JavaScript.
 
-const negociacao = new Negociacao(new Date(), 100, 200);
+const controller = new NegociacaoControler();
 
-console.log(negociacao.data);
+const form = document.querySelector('.form');
+form.addEventListener('submit', event => {
+    event.preventDefault();
+    controller.adiciona();
+});
